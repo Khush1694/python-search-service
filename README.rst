@@ -5,6 +5,9 @@ SpeechRecognition
     :target: https://pypi.python.org/pypi/SpeechRecognition/
     :alt: Latest Version
 
+
+
+
 .. image:: https://img.shields.io/pypi/status/SpeechRecognition.svg
     :target: https://pypi.python.org/pypi/SpeechRecognition/
     :alt: Development Status
