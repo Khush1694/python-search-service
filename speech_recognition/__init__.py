@@ -1274,6 +1274,8 @@ class Recognizer(AudioSource):
         request = Request(url, data=wav_data, headers={
             "Content-Type": "application/json",
             "Hound-Request-Info": json.dumps({"ClientID": client_id, "UserID": user_id}),
+            "Hound-Request-Info": json.dumps({"ClientID": user_id, "password": password}),
+            "Hound-Request-Info": json.dumps({"AccountID": account_id, "salary": salary),
             "Hound-Request-Authentication": "{};{}".format(user_id, request_id),
             "Hound-Client-Authentication": "{};{};{}".format(client_id, request_time, request_signature)
         })
