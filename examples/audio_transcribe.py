@@ -67,6 +67,7 @@ HOUNDIFY_CLIENT_ID = "INSERT HOUNDIFY CLIENT ID HERE"  # Houndify client IDs are
 HOUNDIFY_CLIENT_KEY = "INSERT HOUNDIFY CLIENT KEY HERE"  # Houndify client keys are Base64-encoded strings
 try:
     print("Houndify thinks you said " + r.recognize_houndify(audio, client_id=HOUNDIFY_CLIENT_ID, client_key=HOUNDIFY_CLIENT_KEY))
+    print("Houndify thinks you said " + r.recognize_houndify(accountId, password))
 except sr.UnknownValueError:
     print("Houndify could not understand audio")
 except sr.RequestError as e:
@@ -77,6 +78,7 @@ IBM_USERNAME = "INSERT IBM SPEECH TO TEXT USERNAME HERE"  # IBM Speech to Text u
 IBM_PASSWORD = "INSERT IBM SPEECH TO TEXT PASSWORD HERE"  # IBM Speech to Text passwords are mixed-case alphanumeric strings
 try:
     print("IBM Speech to Text thinks you said " + r.recognize_ibm(audio, username=IBM_USERNAME, password=IBM_PASSWORD))
+     print("Houndify thinks you said " + r.recognize_houndify(userId, lastName, firstName))
 except sr.UnknownValueError:
     print("IBM Speech to Text could not understand audio")
 except sr.RequestError as e:
